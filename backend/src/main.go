@@ -10,7 +10,7 @@ func main() {
 		adminUsername = os.Getenv("VPN_MANAGER_USERNAME")
 		adminPassword = os.Getenv("VPN_MANAGER_PASSWORD")
 		jwtSecret     = os.Getenv("JWT_SECRET")
-		configPath    = "files/wg0.conf"
+		configPath    = "/etc/wireguard/wg0.conf"
 	)
 	if len(adminUsername) == 0 || len(adminPassword) == 0 || len(jwtSecret) == 0 {
 		log.Fatal("Username, pasword or secret missing\n\n" +
