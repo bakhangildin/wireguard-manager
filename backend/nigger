@@ -1,0 +1,107 @@
+[Interface] 
+Address = 11.0.8.1/24
+PostUp = iptables -A FORWARD -i %i -j ACCEPT; iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
+ListenPort = 51820
+PrivateKey = MAAATGqhgv04dJRTjvQrjT37HbFUcZ1j2p8wD1EPYXE=
+
+[Peer]
+# Name = Bulat Iphone
+PublicKey = vy7RihzeYQi/MRwXJbeMVLHiUzA5fi63IjEiMgrJIFU=
+AllowedIPs = 11.0.8.2/32
+
+[Peer]
+# Name = Bulat Mac
+PublicKey = 3WzZnYAdT/OyTpKjw00lK74bFZqd5yMFTECzQDizJ0k=
+AllowedIPs = 11.0.8.3/32
+
+[Peer]
+# Name = Danila Iphone
+PublicKey = sObbL7utHR0HW4hpw2QAqxjhaVgXM47x3nObIq6Zc2U=
+AllowedIPs = 11.0.8.4/32
+
+[Peer]
+# Name = Danila PC
+PublicKey = yJlyTfB/NYFLLjvFf8IUPn4J/sy9XdSOq75SFpyjUTE=
+AllowedIPs = 11.0.8.5/32
+
+[Peer]
+# Name = Lida Mac
+PublicKey = +zYEO/8XohB1tA7p/sEaA5q0KUeOgR2BwuRYyhcqoCE=
+AllowedIPs = 11.0.8.6/32
+
+[Peer]
+# Name = Lida Iphone
+PublicKey = Qmguig3EsIZl57v4jf8g8tCMFbzaJvCnM5rXQDXltCI=
+AllowedIPs = 11.0.8.7/32
+
+[Peer]
+# Name = Dima PC
+PublicKey = zVg8sNfe6T1Ijvhv6miiOaQdjfVYuwICVWxQtv5LnW8=
+AllowedIPs = 11.0.8.8/32
+
+[Peer]
+# Name = Dima Mac
+PublicKey = JQLzvXKYUVPalSoByVckDuzotuc2aydjFVgMM3IkGhA=
+AllowedIPs = 11.0.8.9/32
+
+[Peer]
+# Name = Dima Ipad
+PublicKey = E0mFIEkIqglm+PQiyoKdEb1SAIwb5jpxEwqnsnPw/xA=
+AllowedIPs = 11.0.8.10/32
+
+[Peer]
+# Name = Dima Iphone
+PublicKey = n3wpmsEXzqfbGPAblrL+nxX2VSd2ks/iSLVTFHp57nc=
+AllowedIPs = 11.0.8.11/32
+
+[Peer]
+# Name = Parser
+PublicKey = 91kWpzqwWedtywrOup0Rf1wIBfjTRGvLWPLmBuoQomU=
+AllowedIPs = 11.0.8.12/32
+
+[Peer]
+# Name = Anya 1
+PublicKey = s9J7UAYqBJetqPALMTkfFBGGodWdRJkRNiM7I9B2O1Q=
+AllowedIPs = 11.0.8.13/32
+
+[Peer]
+# Name = Anya 2
+PublicKey = yI1MRPf4tKflhnIv+unntyngOGXSE4KwfsTpEbtNpFo=
+AllowedIPs = 11.0.8.14/32
+
+[Peer]
+# Name = Roma 1
+PublicKey = +DZ1rsNNlcwfduslcr5A7nbc4d9wve4xaU/eiHA+m0w=
+AllowedIPs = 11.0.8.15/32
+
+[Peer]
+# Name = Roma 2
+PublicKey = S8YcSM5LFIz0jpp3npSrYJvYffomUQy2EJauF9OOwSI=
+AllowedIPs = 11.0.8.16/32
+
+[Peer]
+# Name = Danil 1
+PublicKey = WlU27b9q5u25mLXplDArCeMzaOmalENCOiyuy6tCZmM=
+AllowedIPs = 11.0.8.17/32
+
+[Peer]
+# Name = Unused
+PublicKey = rF3w+MFtL/0vA5gPhGNeApTJJlS9kyuh25e6/cIQnSw=
+AllowedIPs = 11.0.8.18/32
+
+[Peer]
+# Name = Gordey
+PublicKey = wU3OZTL5MnAV3uXSernsMIx/iTAu3u8z3PRmzIOBDgc=
+AllowedIPs = 11.0.8.19/32
+
+[Peer]
+# Name = Lida PC
+PublicKey = fMSKo6pbgHnpOw3PV6OWm8UhFD2W6tplXmBshLNDnWI=
+AllowedIPs = 11.0.8.20/32
+
+[Peer]
+# Name = files/wg0.conf
+PublicKey = D7RodKAKYnjeSfaskjT/8DU+6mhNMX/r0J/t36Gd/iM=
+AllowedIPs = 11.0.8.21/32
+
